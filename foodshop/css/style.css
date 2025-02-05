@@ -262,7 +262,7 @@ main > .vegetable ul {
 }
 
 main > .oneday {
-    background-image: url(/images/oneday_bg.png);
+    background-image: url(/foodshop/images/oneday_bg.png);
     background-size: cover;
     background-position: center;
 }
