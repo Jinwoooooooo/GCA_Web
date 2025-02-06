@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    font: normal 12px '돋움';
+}
+
+#wrapper {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #333333;
+}
+
+header {
+    width: 100%;
+    height: 35px;
+}
+
+header > h3 {
+    float: left;
+    margin-top: 10px;
+}
+
+header .title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#user > .login {
+    position: relative;
+    width: 350px;
+    height: auto;
+    border: 1px solid #cfded8;
+    box-sizing: border-box;
+    margin: 100px auto;
+}
+
+#user > .login > form > table {
+    margin-left: 52px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#user > .login > form > .btnLogin {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    width: 60px;
+    height: 52px;
+    background-color: #fdfdfd;
+    border: 1px solid #bebebe;
+}
+
+#user > .login > form > table img {
+    width: 20px;
+}
+
+#user > .login > form > table input {
+    width: 150px;
+    height: 22px;
+    margin-left: 6px;
+    margin-bottom: 4px;
+    padding-left: 4px;
+    border: 1px solid #e4eaec;
+}
+
+#user > .login > div {
+    width: 100%;
+    height: 104px;
+    background: #f5f6fa;
+    border-top: 1px solid #cfded8;
+    margin-top: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#user > .login > div > p {
+    margin: 10px 0;
+}
+
+footer > p {
+    font-size: 12px;
+    color: #777777;
+}
+
+footer > p .copyright {
+    float: left;
+}
+
+footer > p .version {
+    float: right;
+}
