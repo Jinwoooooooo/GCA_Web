@@ -1,0 +1,7 @@
+{"users" : [
+    {"uid" : "Kim", "name" : "민지", "age" : "21", "addr" : "서울시"}, 
+    {"uid" : "Pham", "name" : "하니", "age" : "21", "addr" : "서울시"},
+    {"uid" : "Kang", "name" : "해린", "age" : "20", "addr" : "서울시"}, 
+    {"uid" : "Da", "name" : "니엘", "age" : "20", "addr" : "서울시"}, 
+    {"uid" : "Lee", "name" : "혜인", "age" : "19", "addr" : "서울시"} 
+]}
