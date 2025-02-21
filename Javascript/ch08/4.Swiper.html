@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Swiper 실습</title>
+    <!--
+        날짜 : 2025/02/21
+        이름 : 정진우
+        내용 : Swiper 실습하기
+    -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          const swiper = new Swiper('.swiper', {
+          // Optional parameters
+          direction: 'horizontal',
+          loop: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+
+          // And if we need scrollbar
+          scrollbar: {
+            el: '.swiper-scrollbar',
+          },
+        });
+      });
+    </script>
+    <style>
+      .swiper {
+        width: 600px;
+        height: 300px;
+      }
+
+      img {
+        width: 600px;
+        height: 300px;
+        object-fit: contain;
+      }
+    </style>
+</head>
+<body>
+    <h3>4. Swiper 실습</h3>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="./images/main_go_bg3.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main_go_bg4.png" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./images/main_go_bg5.png" alt="">
+        </div>
+        ...
+      </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+    </div>
+</body>
+</html>
