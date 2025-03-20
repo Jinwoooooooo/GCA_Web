@@ -38,9 +38,9 @@
 
             // 데이터 삭제하기 (동적태그 이벤트 생성)
             document.addEventListener('click', async function(e) {
-                e.preventDefault();
-
+                
                 if(e.target.classList == "delete") {
+                    e.preventDefault();
 
                     const tr = e.target.closest('tr');
 
@@ -50,13 +50,14 @@
                         method: 'DELETE',
                     });
 
-                    const data = response;
-                    console.log(data);
+                    if(response.ok) {
+                        const data = await response.text();
+                        console.log(data);
 
-                    // 동적 삭제
-                    tr.remove();
+                        // 동적 삭제
+                        tr.remove();
+                    }
                 }
-
             });
         });
     </script>
